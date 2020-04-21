@@ -16,7 +16,7 @@ public class BarberShop{
 
   /* we denote that the number of chairs in this barbershop is 5. */
 
-    public static final int CHAIRS = 3;
+    public static final int CHAIRS = 10;
     private int numberOfFreeSeats = CHAIRS;
     
     synchronized int getNumSeats()
@@ -57,7 +57,7 @@ public class BarberShop{
 
    /* This method will create new customers for a while */
     
-   for (int i=0; i<8; i++) 
+   for (int i=0; i<10; i++) 
    {
      aCustomer[i] = new Customer(i,customers,barber,barberShop);
      aCustomer[i].start();
